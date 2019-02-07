@@ -16,8 +16,6 @@ async function loadPostsCollection(){
   const client = await mongodb.MongoClient.connect('mongodb://root2:zxcV1234@ds251287.mlab.com:51287/lern_vue_express',{
     useNewUrlParser:true
   });
-  console.log('/////////////');
-  console.log(client);
   return client.db('lern_vue_express').collection('posts');
 
 }
